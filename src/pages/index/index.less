@@ -1,0 +1,87 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.userinfo-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.step{
+  &-view{
+    width:100% ;
+    height: 700rpx;
+    background-color: #3D444E;
+  }
+  &-circle-container{
+    height: 500rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-ring{
+    width: 300px; 
+    height:300px;
+  }
+  &-digital{
+    position: absolute;
+    font-size: 60rpx;
+    color: #797C85; 
+    &-name{
+      font-size: 30rpx;
+    }
+  }
+  &-circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+.statis{
+  &-container{
+    @radius:5px;
+    position: relative;
+    // background: #E76751;
+    height: 300rpx;
+    // border-radius: 3px;
+    border-bottom-left-radius: @radius;
+    border-bottom-right-radius: @radius;
+  }
+  &-split{
+    position: absolute;
+    width:98%;
+    margin:auto;
+    height: 0.5px;
+    top: 30px;
+    left:0;
+    right:0;
+    background: #ED8D70
+  }
+  &-title-container{
+    display: flex;
+    direction: row;
+    justify-content:space-between;
+  }
+  &-avg{
+    font-size: 25rpx;
+    color:#FEC5AF;
+    margin:6px 0 0 5px;
+  }
+  &-max{
+    font-size: 25rpx;
+    color:#FEC5AF;
+    margin:6px 5px 0 0;
+  }
+  &-canvas{
+    margin-top: 20rpx;
+    width:100%; 
+    height: 150px;
+  }
+}

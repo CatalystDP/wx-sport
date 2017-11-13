@@ -1,0 +1,7 @@
+.vscode/
+typings/
+jsconfig.json
+dist/
+node_modules/
+.npmrc
+test-deamon/

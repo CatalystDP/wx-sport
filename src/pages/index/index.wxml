@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="step-view">
+    <view class="userinfo" bindtap="bindViewTap">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" bindtap="handleTapPerson"></image>
+    </view>
+    <view class="step-circle-container" bindtap="handleTapDetail">
+      <view class="step-digital">
+        {{curStep}}
+        <text class="step-digital-name">步</text>
+      </view>
+      <canvas class="step-circle step-bottom" width="300px" height="300px" style="width:300px; height:300px;" canvas-id="step-bottom">
+      </canvas>
+      <canvas canvas-id="step-ring" class="step-circle  step-ring" style="width:300px;height:300px" width="300px" height="300px"></canvas>
+    </view>
+  </view>
+  <view class="statis-container">
+    <view class="statis-title-container">
+      <text class="statis-avg">日均步数：{{avgStep||0}}</text>
+      <text class="statis-max">{{maxStatisStep}}</text>
+    </view>
+    <view class="statis-split"></view>
+    <canvas class="statis-canvas" bindtouchstart="handleStatisTouch" canvas-id="statis-canvas"></canvas>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<view class="login-container">
+    <input class="login-userinput" placeholder="英文ID" bindinput="handleNameInput" placeholder-class="login-userinput-placeholder" value="{{userName}}"/>
+    <button bindtap="login" class="login-btn" hover-class="login-btn-hover">登录</button>
+</view>
